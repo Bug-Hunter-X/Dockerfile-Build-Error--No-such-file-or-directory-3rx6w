@@ -1,0 +1,1 @@
+This repository demonstrates a common error in Dockerfiles: attempting to use a file (requirements.txt) that hasn't been added to the build context yet. The initial Dockerfile will fail to build.  The solution provides a corrected Dockerfile that addresses this issue by ensuring the requirements file is copied into the image *before* it is used by pip.
